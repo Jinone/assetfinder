@@ -8,7 +8,7 @@ Find domains and subdomains potentially related to a given domain.
 If you have Go installed and configured (i.e. with `$GOPATH/bin` in your `$PATH`):
 
 ```
-go get -u github.com/tomnomnom/assetfinder
+go get -u github.com/Jinone/assetfinder
 ```
 
 Otherwise [download a release for your platform](https://github.com/tomnomnom/assetfinder/releases).
@@ -49,3 +49,6 @@ Please feel free to issue pull requests with new sources! :)
 * Flags to control which sources are used
     * Likely to be all on by default and a flag to disable
 * Read domains from stdin
+
+##Add Bufferover
+just for study
