@@ -33,6 +33,7 @@ func main() {
 		fetchThreatCrowd,
 		fetchCrtSh,
 		fetchFacebook,
+		fetchBufferover,
 		//fetchWayback, // A little too slow :(
 		fetchVirusTotal,
 		fetchFindSubDomains,
