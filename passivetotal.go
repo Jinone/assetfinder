@@ -26,7 +26,7 @@ func fetchPassivetotal(domain string) ([]string, error) {
 	req, err := http.NewRequest("GET", fetchURL, nil)
 	req.SetBasicAuth(apiEmail, apiKey)
 	if err != nil {
-		panic(err)
+		return []string{}, nil
 	}
 	resp, _ := client.Do(req)
 	defer resp.Body.Close()
