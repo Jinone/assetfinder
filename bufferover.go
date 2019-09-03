@@ -27,6 +27,7 @@ func fetchBufferover(domain string) ([]string,error) {
 		return s, err
 	}
 	data, err := ioutil.ReadAll(resp.Body)
+	defer resp.Body.Close()
 	b := Bufferover{}
 	json.Unmarshal([]byte(data), &b)
 	for _,c := range b.FDNSA{
