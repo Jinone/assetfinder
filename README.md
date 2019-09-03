@@ -39,8 +39,6 @@ Please feel free to issue pull requests with new sources! :)
     * Needs `SPYSE_API_TOKEN` environment variable set (the free version always gives the first response page, and you also get "25 unlimited requests")
 
 ### Sources to be implemented
-* http://api.passivetotal.org/api/docs/
-* https://community.riskiq.com/ (?)
 * https://riddler.io/
 * http://www.dnsdb.org/
 * https://certdb.com/api-documentation
@@ -50,5 +48,7 @@ Please feel free to issue pull requests with new sources! :)
     * Likely to be all on by default and a flag to disable
 * Read domains from stdin
 
-##Add Bufferover
+## study
+Add Bufferover
+Add Passivetotal Needs `RISK_EMAIL` and `RISK_KEY` environment variable set https://community.riskiq.com
 just for study
