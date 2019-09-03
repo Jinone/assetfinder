@@ -38,6 +38,7 @@ func main() {
 		fetchVirusTotal,
 		fetchFindSubDomains,
 		fetchUrlscan,
+		fetchPassivetotal,
 	}
 
 	out := make(chan string)
