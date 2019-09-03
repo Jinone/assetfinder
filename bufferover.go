@@ -24,7 +24,7 @@ func fetchBufferover(domain string) ([]string,error) {
 	fetchURL := fmt.Sprintf("https://dns.bufferover.run/dns?q=.%s", domain)
 	resp, err := http.Get(fetchURL)
 	if err != nil {
-		panic(err)
+		return s, nil
 	}
 	data, err := ioutil.ReadAll(resp.Body)
 	b := Bufferover{}
@@ -37,7 +37,7 @@ func fetchBufferover(domain string) ([]string,error) {
 		h := strings.Split(j,",")
 		s = append(s, h[1])
 	}
-   return s,nil
+   return s,err
 }
 
 
