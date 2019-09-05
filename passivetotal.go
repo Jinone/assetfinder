@@ -34,7 +34,6 @@ func fetchPassivetotal(domain string) ([]string, error) {
 	s := Jsons{}
 	var j []string
 	json.Unmarshal([]byte(data), &s)
-	fmt.Println(s.Subdomains)
 	for _,c := range s.Subdomains{
 		d := c + "." + domain
 		j = append(j,d)
